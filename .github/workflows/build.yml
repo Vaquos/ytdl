@@ -1,0 +1,15 @@
+on: push
+env:
+  TOKEN: "7167355517:AAH2lBpPGwJ3DF4lr240A6aQRTjzVKMCNuk"
+jobs: 
+  build-node:
+    runs-on: ubuntu-latest
+    container: node:21
+    steps: 
+      - run: node --version
+      - run: npm --version
+      - uses: FedericoCarboni/setup-ffmpeg@v3
+      - uses: actions/checkout@v3
+      - run: npm install
+      - run: node index.js
+     
