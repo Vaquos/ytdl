@@ -1,5 +1,6 @@
 const TelegramBot = require('node-telegram-bot-api');
 const download = require('download')
+require('dotenv').config();
 const {
     parseString
 } = require('xml2js');
@@ -8,6 +9,7 @@ const {
     YouTubeVideo
 } = require("node-tube-dl")
 
+
 const Token = process.env.TOKEN
 const bot = new TelegramBot(Token, {
     polling: true
@@ -15,7 +17,10 @@ const bot = new TelegramBot(Token, {
 
 const {
     TiktokDL
-} = require("@tobyg74/tiktok-api-dl")
+} = require("@tobyg74/tiktok-api-dl");
+const {
+    exit
+} = require('process');
 
 const prefix = "."
 const vtDownload = new RegExp(`^${prefix}vtDownload`)
