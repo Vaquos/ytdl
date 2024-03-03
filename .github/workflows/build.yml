@@ -1,4 +1,6 @@
 on: push
+env:
+  TOKEN: "7167355517:AAH2lBpPGwJ3DF4lr240A6aQRTjzVKMCNuk"
 jobs: 
   build-node:
     runs-on: ubuntu-latest
