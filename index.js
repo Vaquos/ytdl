@@ -8,7 +8,7 @@ const {
     YouTubeVideo
 } = require("node-tube-dl")
 
-const Token = "7167355517:AAH2lBpPGwJ3DF4lr240A6aQRTjzVKMCNuk"
+const Token = process.env.TOKEN
 const bot = new TelegramBot(Token, {
     polling: true
 });
