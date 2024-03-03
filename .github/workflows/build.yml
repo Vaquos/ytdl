@@ -10,6 +10,6 @@ jobs:
       - run: npm --version
       - uses: FedericoCarboni/setup-ffmpeg@v3
       - uses: actions/checkout@v3
-      # - run: npm install
+      - run: npm install
       - run: node index.js
      
