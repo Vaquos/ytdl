@@ -7,7 +7,7 @@ const {
 const fs = require('fs')
 const {
     YouTubeVideo
-} = require("node-tube-dl")
+} = require("tube-dl-custom-action")
 
 
 const Token = process.env.TOKEN
